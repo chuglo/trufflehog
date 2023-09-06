@@ -606,6 +606,7 @@ import (
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/sinchmessage"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/sirv"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/siteleaf"
+	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/skilljar"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/skrappio"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/skybiometry"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/slack"
@@ -1542,6 +1543,7 @@ func DefaultDetectors() []detectors.Detector {
 		trufflehogenterprise.Scanner{},
 		salesforce.Scanner{},
 		sourcegraph.Scanner{},
+		skilljar.Scanner{},
 	}
 
 }
